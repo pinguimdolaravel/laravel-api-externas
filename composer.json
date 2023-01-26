@@ -14,6 +14,7 @@
     "require-dev": {
         "beyondcode/tinkerwell-helper": "^1.4",
         "fakerphp/faker": "^1.9.1",
+        "laradumps/laradumps": "^1.7",
         "laravel/pint": "^1.0",
         "laravel/sail": "^1.0.1",
         "mockery/mockery": "^1.4.4",
