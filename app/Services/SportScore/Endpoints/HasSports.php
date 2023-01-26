@@ -4,7 +4,7 @@ namespace App\Services\SportScore\Endpoints;
 
 trait HasSports
 {
-    public function sports()
+    public function sports(): Sports
     {
         return new Sports();
     }

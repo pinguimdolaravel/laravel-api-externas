@@ -16,19 +16,18 @@ class Playground extends Command
     public function handle(): int
     {
         $service = new SportScoreService();
-        $json    = $service
+        $sport1 = $service
             ->sports()
+            ->get()
+            ->first();
+
+        $json    = $service
+            ->teams()
+            ->fromSport($sport1)
             ->get();
 
-        /** @var Sport $sport1 */
-        $sport1 = $json->first();
 
-        ds($sport1->na);
-
-        /** @var Sport $sport */
-        foreach ($json as $sport) {
-            ds($sport);
-        }
+        ds($json);
 
 
 
