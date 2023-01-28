@@ -26,7 +26,6 @@ test('', function () {
         ]),
     ]);
 
-
     $sports = SportScore::sports()->get();
 
     expect($sports)

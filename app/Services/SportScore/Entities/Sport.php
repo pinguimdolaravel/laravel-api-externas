@@ -4,13 +4,13 @@ namespace App\Services\SportScore\Entities;
 
 class Sport
 {
-    public int $id;
+    public readonly int $id;
 
-    public string $slug;
+    public readonly string $slug;
 
-    public string $name;
+    public readonly string $name;
 
-    public array $nameTranslations;
+    public readonly array $nameTranslations;
 
     public function __construct(array $data)
     {
